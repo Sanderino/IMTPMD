@@ -1,5 +1,6 @@
 package com.example.pie4all;
 
+import com.example.pie4all.R; 
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -60,5 +61,29 @@ public class MainActivity extends Activity {
 			return rootView;
 		}
 	}
+	
 
-}
+	//deze methoden worden door de knoppen aangeroepen en zijn gekoppeld in de XML via het onClick attribuut
+	public void openProductscherm( View view )
+	{
+		//toon het optiescherm
+		this.setContentView( R.layout.productscherm );
+
+	}
+	
+	//deze methoden worden door de knoppen aangeroepen en zijn gekoppeld in de XML via het onClick attribuut
+	public void openBestelscherm( View view )
+	{
+		//toon het optiescherm
+		this.setContentView( R.layout.bestelscherm );
+
+	}
+		
+	//deze methoden worden door de knoppen aangeroepen en zijn gekoppeld in de XML via het onClick attribuut
+	public void openHoofdscherm( View view )
+	{
+		//toon het optiescherm
+		this.setContentView( R.layout.fragment_main );
+
+	}	
+	}

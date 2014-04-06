@@ -11,6 +11,11 @@ import android.widget.TextView;
 
 public class BestelFragment extends Fragment implements View.OnClickListener{
 
+	private String naamText;
+	private String adresText;
+	private String telefoonText;
+	private String emailText;
+	
 	@Override
 	 public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
 	 {
@@ -34,11 +39,16 @@ public class BestelFragment extends Fragment implements View.OnClickListener{
 		TextView telefoon = (TextView) v.findViewById(R.id.telefoonText);
 		TextView email = (TextView) v.findViewById(R.id.emailText);
 		
-		String usernaamText = usernaam.getText().toString();
-		String wachtwoordText = wachtwoord.getText().toString();
+		String usernameText = username.getText().toString();
+		String adresText = adres.getText().toString();
+		String telefoonText = telefoon.getText().toString();
+		String emailText = email.getText().toString();
 		
-		System.out.println(usernaamText);
-		System.out.println(wachtwoordText);
+		System.out.println(usernameText);
+		System.out.println(adresText);
+		System.out.println(telefoonText);
+		System.out.println(emailText);
+		
 	//if()
 	//{
 	//SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(v.getContext());
