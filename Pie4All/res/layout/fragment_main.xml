@@ -12,21 +12,9 @@
         android:id="@+id/listView1"
         android:layout_width="298dp"
         android:layout_height="match_parent"
-        android:layout_below="@+id/hoofdscherm"
-        android:paddingLeft="20dp" >
-    </ListView>
+        android:layout_below="@+id/hoofdscherm" >
 
-    <TextView
-        android:id="@+id/hoofdscherm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:text="Categorie"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="30sp" />
+    </ListView>
 
     <Button
         android:id="@+id/KiesKnop"
@@ -36,5 +24,15 @@
         android:layout_alignParentRight="true"
         android:onClick="openProductscherm"
         android:text="Kies" />
+
+    <TextView
+        android:id="@+id/hoofdscherm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Selecteer een categorie"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
 
 </RelativeLayout>

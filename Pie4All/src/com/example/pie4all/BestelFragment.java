@@ -15,6 +15,8 @@ public class BestelFragment extends Fragment implements View.OnClickListener{
 	private String adresText;
 	private String telefoonText;
 	private String emailText;
+	private int aantal;
+
 	
 	@Override
 	 public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
@@ -23,6 +25,8 @@ public class BestelFragment extends Fragment implements View.OnClickListener{
 
 	  Button bestelKnop = (Button) v.findViewById(R.id.bestelknop_bestelscherm);
 	  Button annuleerKnop = (Button) v.findViewById(R.id.annuleerknop_bestelscherm);
+	  
+	  
 	  
 	  bestelKnop.setOnClickListener(this);
 	  annuleerKnop.setOnClickListener(this);

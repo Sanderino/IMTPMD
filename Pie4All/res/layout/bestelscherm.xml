@@ -27,56 +27,13 @@
         android:text="Product omschrijving"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/naamText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/product_omschrijvingText"
-        android:layout_marginLeft="20dp"
-        android:ems="10"
-        android:hint="Naam"
-        android:inputType="textPersonName" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/adresText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/naamText"
-        android:layout_below="@+id/naamText"
-        android:ems="10"
-        android:hint="Adres"
-        android:inputType="textPostalAddress" />
-
-    <EditText
-        android:id="@+id/telefoonText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/adresText"
-        android:layout_below="@+id/adresText"
-        android:ems="10"
-        android:hint="Telefoon"
-        android:inputType="phone" />
-
-    <EditText
-        android:id="@+id/emailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/telefoonText"
-        android:layout_below="@+id/telefoonText"
-        android:ems="10"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress" />
-
     <Button
         android:id="@+id/annuleerknop_bestelscherm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:onClick="openProductscherm"
         android:text="Annuleer" />
 
     <Button
@@ -85,7 +42,70 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:onClick="openProductscherm"
         android:text="Bestel" />
+
+    <EditText
+        android:id="@+id/telefoonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_omschrijvingText"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="48dp"
+        android:layout_toLeftOf="@+id/bestelknop_bestelscherm"
+        android:ems="10"
+        android:hint="Telefoon"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/naamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefoonText"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/bestelknop_bestelscherm"
+        android:ems="10"
+        android:hint="Naam"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/naamText"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/bestelknop_bestelscherm"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/adresText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailText"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/bestelknop_bestelscherm"
+        android:ems="10"
+        android:hint="Adres"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/aantalProducten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/telefoonText"
+        android:layout_below="@+id/product_omschrijvingText"
+        android:text="Aantal producten:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/producten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/aantalProducten"
+        android:layout_alignBottom="@+id/aantalProducten"
+        android:layout_alignRight="@+id/telefoonText"
+        android:text="01"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
