@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bestelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="24dp"
+        android:text="Bestel" />
+
+    <Button
+        android:id="@+id/Annuleer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bestelbutton"
+        android:layout_alignBottom="@+id/bestelbutton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="39dp"
+        android:text="Annuleer" />
+
+    <TextView
+        android:id="@+id/producttekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bestelbutton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Product"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/product_omschrijvingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/producttekst"
+        android:layout_below="@+id/producttekst"
+        android:text="Poduct omschrijving"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
